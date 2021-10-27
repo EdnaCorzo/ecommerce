@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="{{ url_for ('static', filename='css/style-catalogo.css') }}">
+</head>
+
+<body>
+  <header id="i11qoy" class="header-banner">
+    <div id="iem82g" class="container-width">
+      <div class="logo-container">
+      </div>
+      <nav class="menu">
+        <div id="ibwfjg" class="menu-item"><a href="/register/" class="enlacemenu">REGISTRO</a></div>
+        <div id="i0z5zz" class="menu-item"><a href="/login/" class="enlacemenu">LOGIN</a></div>
+        <div id="i7o9js" class="menu-item"><a href="/catalogoproductos/" class="enlacemenu">PRODUCTOS</a></div>
+        <div id="iclwbh" class="menu-item"><a href="/" class="enlacemenu">INICIO</a></div>
+        <div id="ibwfjg" class="menu-item"><a href="/logout/" class="enlacemenu">Salir</a></div>
+        <div id="i0z5zz" class="saludo">{{ session.usuario }}</div>
+      </nav>
+      <div class="clearfix">
+      </div>
+    </div>
+  </header>
+  <div class="row" id="iwnt91">
+    <div class="cell" id="iik38f">
+      <div class="flex-title" id="i2ilj5">VER OTROS PRODUCTOS</div>
+      <a href="/detalleproducto/Jeans"><img src="{{ url_for ('static', filename='images/1jeans-inicio.png') }}" alt=""/></a>
+      <a href="/detalleproducto/Chaqueta"><img src="{{ url_for ('static', filename='images/2chaqueta-inicio.png') }}" alt=""/></a>
+      <a href="/detalleproducto/Chaqueta%20Jean%20Hombre"><img src="{{ url_for ('static', filename='images/3chaqueta-inicio.png') }}" alt=""/></a>
+      <a href="/detalleproducto/Chaqueta%20Jean%20Mujer"><img src="{{ url_for ('static', filename='images/4chaqueta-inicio.png') }}" alt=""/></a>
+    </div>
+    <div class="cell" id="iz12k8">
+      {% for pro in productos %}
+      {% if pro[2]==nomprodu %}
+        <div class="row" id="idnx2l">
+          {% if pro[7] %}
+            <div class="cell" id="iqsjfp"><img id="it3tj7" src="/static/images/{{ pro[7] }}" /></div>
+          {% else %}
+            <div class="cell" id="iqsjfp"><img id="it3tj7"  src="https://www.dummyjumm.com/wp-content/plugins/woocommerce/assets/images/placeholder.png" /></div>
+          {% endif %}
+          <div class="cell" id="i92bd8">
+            <div id="icbtki">{{ pro[2] }}</div>
+            <div id="i6s64o">${{ pro[3] }}</div>
+            <div id="ialsok">{{ pro[5] }}</div>
+            <form class="" action='/nuevoenlista/' method="post" novalidate>
+              <input style="display:none" type="text" id="" name="usuario" value="{{ session.id }}">
+              <input style="display:none" type="text" id="" name="producto" value="{{ pro[0] }}">
+              <button type="submit" class="button2">Añadir a la lista de deseos</button>
+            </form>
+          </div>
+        </div>
+        {% endif %}
+      {% endfor %}
+      <div id="i6s64o">DESCRIPCION DETALLADA</div>
+      {% for pro in productos %}
+        {% if pro[2]==nomprodu %}
+          <div id="ialsok">{{ pro[6] }}</div>
+        {% endif %}
+      {% endfor %}
+      <br>
+      <br>
+      <div id="i6s64o">AÑADIR COMENTARIO</div>
+      {% for pro in productos %}
+        {% if pro[2]==nomprodu %}
+          <form action='/nuevocomentario/' method="post" novalidate>
+            {{ form.hidden_tag() }}
+          <p style="display:none">
+              {{ form.producto.label }}<br>
+              {{ form.producto(size=20, value=pro[0])}}<br>
+          </p>
+          <p style="display:none">
+              {{ form.usuario.label }}<br>
+              {{ form.usuario(size=50, value=session.id)}}<br>
+          </p>
+          <p>
+              {{ form.mensaje.label }}<br>
+              {{ form.mensaje(size=20)}}<br>
+          </p>
+          <p>{{ form.enviar() }}</p>
+          </form>
+          
+        {% endif %}
+
+      {% endfor %}
+      <div id="i6s64o">COMENTARIOS AÑADIDOS</div>
+      {% for comentario in comentarios %}
+          {% if loop.index % 2 == 0 %}
+          <div class="box-comment">
+            <p>{{comentario[0]}} Dijo:</p>
+            <p>{{comentario[1]}}</p>           
+          </div>
+          {% else %}
+          <div class="box-comment2">
+            <p>{{comentario[0]}} Dijo:</p>
+            <p>{{comentario[1]}}</p>           
+          </div>
+          {% endif %}
+      {% endfor %}
+      </div> 
+    </div>
+  </div>
+  <footer id="i8jraq" class="footer-under">
+    <div id="ildh7x" class="blk-desc">© Levi Strauss Co. | Todos los Derechos Reservados 
+    </div>
+    <div class="container-width">
+    </div>
+  </footer>
+</body>
+<html>

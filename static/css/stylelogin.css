@@ -1,0 +1,267 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.clearfix {
+    clear: both;
+}
+
+.header-banner {
+    padding-top: 35px;
+    padding-bottom: 100px;
+    color: #ffffff;
+    font-family: Helvetica, serif;
+    font-weight: 100;
+    background-image: url("/static/images/login-register.png");
+    background-attachment: scroll, scroll;
+    background-position: left top, center center;
+    background-repeat: repeat-y, no-repeat;
+    background-size: contain, cover;
+}
+
+.form .nombre {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 7px 10px;
+    border-radius: 2px;
+    color: #fff;
+    background-color: #554c57;
+    border: none;   
+}
+
+.container-width {
+    width: 90%;
+    max-width: 1150px;
+    margin: 0 auto;
+}
+
+.logo-container {
+    float: left;
+    width: 50%;
+}
+
+.menu {
+    float: right;
+    width: 50%;
+}
+
+.enlacemenu {
+    font-size: 18px;
+    color:#ffffff;
+    text-decoration: none;
+}
+
+.enlacemenu:hover {
+    color:#841f37;
+}
+
+.enlace-2 {
+    font-size: 15px;
+    color:#000000;
+    text-decoration: none;
+}
+
+.enlace-2:hover {
+    color:#841f37;
+}
+
+.menu-item {
+    float: right;
+    font-size: 15px;
+    color: #eee;
+    width: 130px;
+    padding: 10px;
+    min-height: 50px;
+    text-align: center;
+    line-height: 30px;
+    font-weight: 400;
+}
+
+.blk-desc {
+    color: #b1b1b1;
+    font-size: 15px;
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto;
+    font-weight: 100;
+}
+
+.footer-under {
+    background-color: #312833;
+    padding-bottom: 100px;
+    padding-top: 100px;
+    min-height: 500px;
+    color: #eee;
+    position: relative;
+    font-weight: 100;
+    font-family: Helvetica, serif;
+}
+
+.form {
+    border-radius: 3px;
+    padding: 10px 15px;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.input {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 7px 10px;
+    border-radius: 2px;
+    color: #fff;
+    background-color: #554c57;
+    border: none;
+}
+
+.label {
+    width: 100%;
+    display: block;
+}
+
+.button {
+    width: 100%;
+    margin: 15px 0;
+    background-color: #785580;
+    border: none;
+    color: #fff;
+    border-radius: 2px;
+    padding: 7px 10px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+#ijvr {
+    font-weight: 700;
+}
+
+#izwqp {
+    font-weight: 700;
+}
+
+#izwqp2 {
+    text-align: left;
+    font-weight: 700;
+    width: 30%;
+}
+
+#id3x61 {
+    font-weight: 700;
+}
+
+#io4c {
+    font-weight: 700;
+}
+
+#i0to {
+    height: auto;
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-attachment: scroll;
+    background-size: cover;
+    min-height: 800px;
+}
+
+#i8jraq {
+    min-height: 70px;
+    padding: 26px 0 20px 0;
+    background-image: linear-gradient(rgb(132, 31, 55), rgb(132, 31, 55));
+    background-repeat: repeat;
+    background-position: left top;
+    background-attachment: scroll;
+    background-size: auto;
+}
+
+#ildh7x {
+    color: #ffffff;
+}
+
+.row {
+    display: flex;
+    justify-content: flex-start;
+    align-items: stretch;
+    flex-wrap: nowrap;
+    padding: 10px;
+}
+
+.cell {
+    min-height: 75px;
+    flex-grow: 1;
+    flex-basis: 100%;
+}
+
+#i8ubr4 {
+    margin: 50px 0 0 0;
+}
+
+#ia6su {
+    padding: 10px;
+    margin: -10px 0 0 0;
+    color: #000000;
+    text-align: center;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.regis {
+    padding: 10px;
+    margin: -10px 0 0 0;
+    color: #000000;
+    text-align: left;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+#iz31j3 {
+    background-image: linear-gradient(#841f37, #841f37);
+    background-repeat: repeat;
+    background-position: left top;
+    background-attachment: scroll;
+    background-size: auto;
+}
+
+#ilzmw {
+    font-size: 13px;
+    display: block;
+}
+
+#i1km7 {
+    display: inline-block;
+}
+
+#itxtj {
+    padding: 10px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 25px;
+    width: 390px;
+    color: #000000;
+}
+
+.submenu-item {
+    float: right;
+    font-size: 15px;
+    color: #eee;
+    width: 130px;
+    padding: 10px;
+    min-height: 50px;
+    text-align: center;
+    line-height: 30px;
+    font-weight: 700;
+    min-height: auto;
+    margin: 0 120px 0 0;
+}
+
+.roundimg {
+    height: 130px;
+    margin: 0 0 0 120px;
+}
+
+@media (max-width: 768px) {
+    .row {
+        flex-wrap: wrap;
+    }
+}

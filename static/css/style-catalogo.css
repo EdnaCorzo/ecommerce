@@ -1,0 +1,438 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.clearfix {
+    clear: both;
+}
+
+.header-banner {
+    padding-top: 35px;
+    padding-bottom: 100px;
+    color: #ffffff;
+    font-family: Helvetica, serif;
+    font-weight: 100;
+    background-image: url("/static/images/homebanner.png");
+    background-attachment: scroll, scroll;
+    background-position: left center, center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container-width {
+    width: 90%;
+    max-width: 1150px;
+    margin: 0 auto;
+}
+
+.logo-container {
+    float: left;
+    width: 50%;
+}
+
+.menu {
+    float: right;
+    width: 50%;
+}
+
+.enlace-2 {
+    font-size: 20px;
+    color:#000000;
+    text-decoration: none;
+}
+
+.enlace-2:hover {
+    color:#841f37;
+}
+
+.box-comment{
+    border: 2px solid #841f37;
+    margin: 10px 0;
+    padding: 10px;
+}
+
+.box-comment2 {
+    border: 2px solid #841f37;
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #FAE7EC;
+}
+
+.menu-item {
+    float: right;
+    font-size: 15px;
+    color: #eee;
+    width: 130px;
+    padding: 10px;
+    min-height: 50px;
+    text-align: center;
+    line-height: 30px;
+    font-weight: 400;
+}
+
+.saludo {
+    font-size: 20px;
+    color: #eee;
+    padding: 10px;
+    min-height: 50px;
+    text-align: right;
+    line-height: 30px;
+    font-weight: 400;
+}
+
+.flex-title {
+    margin-bottom: 15px;
+    font-size: 2em;
+    text-align: center;
+    font-weight: 700;
+    color: #555;
+    padding: 5px;
+}
+
+.blk-desc {
+    color: #b1b1b1;
+    font-size: 15px;
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto;
+    font-weight: 100;
+}
+
+.footer-under {
+    background-color: #312833;
+    padding-bottom: 100px;
+    padding-top: 100px;
+    min-height: 500px;
+    color: #eee;
+    position: relative;
+    font-weight: 100;
+    font-family: Helvetica, serif;
+}
+
+.form {
+    border-radius: 3px;
+    padding: 10px 15px;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.input {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 7px 10px;
+    border-radius: 2px;
+    color: #fff;
+    background-color: #554c57;
+    border: none;
+}
+
+input[type=text], select, textarea {
+    width: 50%; /* Full width */
+    padding: 12px; /* Some padding */ 
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  }
+  
+  /* Style the submit button with a specific background color etc */
+  input[type=submit] {
+    background-color: #841f37;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  /* When moving the mouse over the submit button, add a darker green color */
+  input[type=submit]:hover {
+    background-color: #d17802;
+  }
+  
+  /* Add a background color and some padding around the form */
+  .container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+
+.button {
+    width: 100%;
+    margin: 15px 0;
+    background-color: #841f37;
+    border: none;
+    color: #fff;
+    border-radius: 2px;
+    padding: 7px 10px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.button2 {
+    width: 60%;
+    margin: 15px 0;
+    background-color: #841f37;
+    border: none;
+    color: #fff;
+    border-radius: 2px;
+    padding: 7px 10px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.form .nombre {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 7px 10px;
+    border-radius: 2px;
+    color: #fff;
+    background-color: #554c57;
+    border: none;
+}
+
+.enlacemenu {
+    font-size: 18px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.enlacemenu:hover {
+    color: #841f37;
+}
+
+.row {
+    display: flex;
+    justify-content: flex-start;
+    align-items: stretch;
+    flex-wrap: nowrap;
+    padding: 10px;
+}
+
+.cell {
+    min-height: 75px;
+    flex-grow: 1;
+    flex-basis: 100%;
+}
+
+#iwcio {
+    color: #000000;
+    font-size: 20px;
+    text-align: left;
+}
+
+#i8jraq {
+    min-height: 70px;
+    padding: 26px 0 20px 0;
+    background-image: linear-gradient(rgb(132, 31, 55), rgb(132, 31, 55));
+    background-repeat: repeat;
+    background-position: left top;
+    background-attachment: scroll;
+    background-size: auto;
+}
+
+#ildh7x {
+    color: #ffffff;
+}
+
+#ibwfjg {
+    font-weight: 700;
+}
+
+#i0z5zz {
+    font-weight: 700;
+}
+
+#i7o9js {
+    font-weight: 700;
+}
+
+#iclwbh {
+    font-weight: 700;
+}
+
+#i11qoy {
+    height: 140px;
+}
+
+#iik38f {
+    flex-basis: 31.93%;
+}
+
+#it3tj7 {
+    color: black;
+}
+
+#icbtki {
+    padding: 10px;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+#icbtki2 {
+    padding: 10px;
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+}
+
+#i6s64o {
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+#ialsok {
+    padding: 10px;
+    font-size: 18px;
+}
+
+#iogcsk {
+    color: black;
+    width: 144px;
+    height: 103px;
+}
+
+#i2ilj5 {
+    color: #000000;
+    font-size: 20px;
+    text-align: left;
+}
+
+#iqxhyl {
+    color: #000000;
+    font-size: 20px;
+    text-align: left;
+    font-weight: 500;
+}
+
+#iwnt91 {
+    margin: 0 100px 0 100px;
+}
+
+#iwdaf {
+    color: black;
+}
+
+#i5ek7 {
+    padding: 10px;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+#ieivi {
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+#iao7k {
+    padding: 10px;
+    font-size: 18px;
+}
+
+#i5vwk {
+    color: black;
+    width: 144px;
+    height: 103px;
+}
+
+#igupu {
+    color: black;
+}
+
+#iyir1 {
+    padding: 10px;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+#i7ssl {
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+#i7wj8 {
+    padding: 10px;
+    font-size: 18px;
+}
+
+#i4gbq {
+    color: black;
+    width: 144px;
+    height: 103px;
+}
+
+#iadnk {
+    color: black;
+}
+
+#ijrh9 {
+    padding: 10px;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+#itrfie {
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+#iwusqv {
+    padding: 10px;
+    font-size: 18px;
+}
+
+#ip71pi {
+    color: black;
+    width: 144px;
+    height: 103px;
+}
+
+#iadp6u {
+    color: black;
+}
+
+#ivhiul {
+    padding: 10px;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+#i5cpsg {
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+#i3gwun {
+    padding: 10px;
+    font-size: 18px;
+}
+
+#iyvqot {
+    color: black;
+    width: 144px;
+    height: 103px;
+}
+
+@media (max-width: 768px) {
+    .row {
+        flex-wrap: wrap;
+    }
+}

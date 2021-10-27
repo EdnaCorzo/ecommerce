@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="{{ url_for ('static', filename='css/stylelogin.css') }}">
+</head>
+{% block contenido %}
+<body>
+    <header class="header-banner" id="i0to">
+        <div class="container-width" id="ilzg">
+            <div class="logo-container" id="i6x9"></div>
+            <nav class="menu" id="irua">
+                <div class="menu-item" id="io4c"><a class="enlacemenu" href="/register/">REGISTRO</a></div>
+                <div class="menu-item" id="ijvr"><a class="enlacemenu" href="/login/">LOGIN</a></div>
+                <div class="menu-item" id="id3x61"><a class="enlacemenu" href="/catalogoproductos/">PRODUCTOS</a></div>
+                <div class="menu-item" id="izwqp"><a class="enlacemenu" href="/">INICIO</a></div>
+            </nav>
+            <div class="clearfix"></div>
+            <div class="row" id="i8ubr4">
+                <div class="cell" id="iouamm"></div>
+                <div class="cell" id="ijlaii">
+                    <div id="ia6su">INGRESE SUS DATOS PERSONALES</div>
+                    <form class="form" id="i8a45t" action="/UsuarioNuevo/" method="post" novalidate>
+                        {{ form.hidden_tag() }}
+                        <p>
+                            {{ form.nombre.label }}<br>
+                            {{ form.nombre(size=50)}}<br>
+                        </p>
+                        <p>
+                            {{ form.usuario.label }}<br>
+                            {{ form.usuario(size=50)}}<br>
+                        </p>
+                        <p>
+                            {{ form.correo.label }}<br>
+                            {{ form.correo(size=50)}}<br>
+                        </p>
+                        <p>
+                            {{ form.idusuario.label }}<br>
+                            {{ form.idusuario(size=50)}}<br>
+                        </p>
+                        <p>
+                            {{ form.contrasena.label }}<br>
+                            {{ form.contrasena(size=30)}}<br>
+                        </p>
+                        <p>{{ form.botonGuardar() }}</p>
+                    </form>
+                </div>
+                <div class="cell" id="ilg8up"></div>
+            </div>
+        </div>
+    </header>
+    <footer id="i8jraq" class="footer-under">
+        <div class="blk-desc" id="ildh7x">© Levi Strauss Co. | Todos los Derechos Reservados </div>
+        <div class="container-width"></div>
+    </footer>
+</body>
+{% endblock %}
+<html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html style="font-size: 16px;">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="keywords" content="Minimalist interior design">
+    <meta name="description" content="">
+    <meta name="page_type" content="np-template-header-footer-from-plugin">
+    <title>Eliminacion Productos</title>
+    <link rel="stylesheet" href="{{ url_for ('static', filename='css/creacion-pro.css') }}" media="screen">
+<link rel="stylesheet" href="{{ url_for ('static', filename='css/page-crepro.css') }}" media="screen">
+    <meta name="generator" content="Nicepage 3.27.1, nicepage.com">
+    <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i">
+    <link id="u-page-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i">
+    
+    
+    <meta name="theme-color" content="#478ac9">
+    <meta property="og:title" content="Page 3">
+    <meta property="og:type" content="website">
+  </head>
+  <body class="u-body u-overlap"><header class="u-clearfix u-header u-image u-header" id="sec-486a" data-image-width="1074" data-image-height="806"><div class="u-clearfix u-sheet u-sheet-1">
+    <a href="/logout/" class="u-active-none u-align-right u-border-2 u-border-white u-btn u-btn-rectangle u-button-style u-custom-font u-font-montserrat u-hover-none u-none u-radius-0 u-text-body-alt-color u-btn-1">Cerrar sesión</a>
+    <h2 class="u-align-center u-custom-font u-font-montserrat u-text u-text-body-alt-color u-text-1">DASHBOARD​ ADMINISTRATIVO, Bienvenido {{ session.usuario }}</h2>
+      </div></header> 
+    <section class="u-clearfix u-section-1" id="carousel_4e77">
+      <h3 class="u-text u-text-1">GESTIÓN DE COMENTARIOS&nbsp;</h3>
+      <div class="u-container-style u-custom-color-7 u-expanded-width-sm u-expanded-width-xs u-group u-shape-rectangle u-group-1">
+        <div class="u-container-layout u-container-layout-1">
+          <a href="/dashboard/" class="u-border-1 u-border-active-palette-2-base u-border-hover-palette-1-base u-btn u-button-style u-custom-font u-font-montserrat u-none u-text-body-color u-btn-1">Panel de control</a>
+          <h4 class="u-custom-font u-font-montserrat u-text u-text-body-color u-text-default u-text-2">PRODUCTOS</h4>
+          <a href="/crearproducto/" class="u-border-1 u-border-active-palette-2-base u-border-hover-palette-1-base u-btn u-button-style u-custom-font u-font-montserrat u-none u-text-body-color u-btn-2">*&nbsp; &nbsp;Crear producto</a>
+          <a href="/editar-producto/" class="u-border-1 u-border-active-palette-2-base u-border-hover-palette-1-base u-btn u-button-style u-custom-font u-font-montserrat u-none u-text-body-color u-btn-3">*&nbsp; &nbsp;Editar producto&nbsp;</a>
+          <a href="/eliminar-producto/" class="u-border-1 u-border-active-palette-2-base u-border-hover-palette-1-base u-btn u-button-style u-custom-font u-font-montserrat u-none u-text-body-color u-btn-3">*&nbsp; &nbsp;Eliminar producto&nbsp;</a>
+          <a href="/gestioncomentarios/" class="u-border-1 u-border-active-palette-2-base u-border-hover-palette-1-base u-btn u-button-style u-custom-font u-font-montserrat u-none u-text-body-color u-btn-5">COMENTARIOS<span style="font-weight: 700;"></span>
+          </a>
+          <h4 class="u-custom-font u-font-montserrat u-text u-text-body-color u-text-default u-text-2">USUARIOS</h4>
+          <a href="/editar-usuario/" class="u-border-1 u-border-active-palette-2-base u-border-hover-palette-1-base u-btn u-button-style u-custom-font u-font-montserrat u-none u-text-body-color u-btn-3">*&nbsp; &nbsp;Editar usuario&nbsp;</a>
+          <a href="/eliminar-usuario/" class="u-border-1 u-border-active-palette-2-base u-border-hover-palette-1-base u-btn u-button-style u-custom-font u-font-montserrat u-none u-text-body-color u-btn-3">*&nbsp; &nbsp;Eliminar usuario&nbsp;</a>
+          <a href="/listadeseos/" class="u-border-1 u-border-active-palette-2-base u-border-hover-palette-1-base u-btn u-button-style u-custom-font u-font-montserrat u-none u-text-body-color u-btn-7">LISTA DE DESEOS</a>
+        </div>
+      </div>
+      <h4 class="u-align-center u-custom-font u-font-montserrat u-text u-text-3">ELIMINACIÓN DE PRODUCTOS</h4>
+      <div class="u-form u-form-1">
+        <form action='/listProduct/'>
+            <p>Buscar producto por codigo<br>
+                <input type="text" name="idproducto">
+                <input type="submit" value="Buscar">
+            </p>
+            <br>
+        </form>
+        <form class="" id="" action="/ProductoEliminado/" method="post" novalidate>
+          {{ form.hidden_tag() }}
+          <p>
+              {{ form.codigo.label }}<br>
+              {{ form.codigo(size=20, value=cod1)}}<br>
+          </p>
+          <p>
+              {{ form.nombre.label }}<br>
+              {{ form.nombre(size=50, value=nom1)}}<br>
+          </p>
+          <p>
+              {{ form.precio.label }}<br>
+              {{ form.precio(size=20, value=pre1)}}<br>
+          </p>
+          <p>
+              {{ form.existencia.label }}<br>
+              {{ form.existencia(size=20, value=qty1)}}<br>
+          </p>
+          <p>
+              {{ form.descorta.label }}<br>
+              {{ form.descorta(size=50, value=cor1)}}<br>
+          </p>
+          <p>
+            {{ form.deslarga.label }}<br>
+            {{ form.deslarga(size=80, value=lar1)}}<br>
+        </p>
+          <p>{{ form.botonEliminar() }}</p>
+        </form>
+      </div>
+    </section>
+    <footer class="u-align-center u-clearfix u-custom-color-6 u-footer u-footer" id="sec-3385"><div class="u-align-left u-clearfix u-sheet u-sheet-1">
+        <p class="u-custom-font u-font-montserrat u-text u-text-1">© Levi Strauss co. |&nbsp; Todos los derechos reservados</p>
+      </div></footer>
+  </body>
+</html>

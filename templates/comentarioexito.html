@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="{{ url_for ('static', filename='css/style-catalogo.css') }}">
+</head>
+
+<body>
+  <header id="i11qoy" class="header-banner">
+    <div id="iem82g" class="container-width">
+      <div class="logo-container">
+      </div>
+      <nav class="menu">
+        <div id="ibwfjg" class="menu-item"><a href="/register/" class="enlacemenu">REGISTRO</a></div>
+        <div id="i0z5zz" class="menu-item"><a href="/login/" class="enlacemenu">LOGIN</a></div>
+        <div id="i7o9js" class="menu-item"><a href="/catalogoproductos/" class="enlacemenu">PRODUCTOS</a></div>
+        <div id="iclwbh" class="menu-item"><a href="/" class="enlacemenu">INICIO</a></div>
+        <div id="ibwfjg" class="menu-item"><a href="/logout/" class="enlacemenu">Salir</a></div>
+        <div id="i0z5zz" class="saludo">Bienvenido {{ session.usuario }}</div>
+      </nav>
+      <div class="clearfix">
+      </div>
+    </div>
+  </header>
+  <div class="row" id="iwnt91">
+    <div class="cell" id="iik38f">
+      <div class="flex-title" id="i2ilj5">VER OTROS PRODUCTOS</div>
+      <a href="/detalleproducto/Jeans"><img src="{{ url_for ('static', filename='images/1jeans-inicio.png') }}" alt=""/></a>
+      <a href="/detalleproducto/Chaqueta"><img src="{{ url_for ('static', filename='images/2chaqueta-inicio.png') }}" alt=""/></a>
+      <a href="/detalleproducto/Chaqueta%20Jean%20Hombre"><img src="{{ url_for ('static', filename='images/3chaqueta-inicio.png') }}" alt=""/></a>
+      <a href="/detalleproducto/Chaqueta%20Jean%20Mujer"><img src="{{ url_for ('static', filename='images/4chaqueta-inicio.png') }}" alt=""/></a>
+    </div>
+    <div class="cell" id="iz12k8">
+      <div id="i6s64o">COMENTARIO AÑADIDO EXITOSAMENTE</div>
+      </div> 
+    </div>
+  </div>
+  <footer id="i8jraq" class="footer-under">
+    <div id="ildh7x" class="blk-desc">© Levi Strauss Co. | Todos los Derechos Reservados 
+    </div>
+    <div class="container-width">
+    </div>
+  </footer>
+</body>
+<html>

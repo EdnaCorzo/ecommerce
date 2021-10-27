@@ -1,0 +1,315 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.clearfix {
+    clear: both;
+}
+
+.header-banner {
+    padding-top: 35px;
+    padding-bottom: 100px;
+    color: #ffffff;
+    font-family: Helvetica, serif;
+    font-weight: 100;
+    background-image: url("/static/images/homebanner.png");
+    background-attachment: scroll, scroll;
+    background-position: left center, center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container-width {
+    width: 90%;
+    max-width: 1150px;
+    margin: 0 auto;
+}
+
+.logo-container {
+    float: left;
+    width: 50%;
+}
+
+.menu {
+    float: right;
+    width: 50%;
+}
+
+.menu-item {
+    float: right;
+    font-size: 15px;
+    color: #eee;
+    width: 130px;
+    padding: 10px;
+    min-height: 50px;
+    text-align: center;
+    line-height: 30px;
+    font-weight: 400;
+}
+
+.blk-desc {
+    color: #b1b1b1;
+    font-size: 15px;
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto;
+    font-weight: 100;
+}
+
+.footer-under {
+    background-color: #312833;
+    padding-bottom: 100px;
+    padding-top: 100px;
+    min-height: 500px;
+    color: #eee;
+    position: relative;
+    font-weight: 100;
+    font-family: Helvetica, serif;
+}
+
+.form {
+    border-radius: 3px;
+    padding: 10px 15px;
+    background-color: white;
+}
+
+.button {
+    width: 50%;
+    margin: 15px 0;
+    background-color: #841f37;
+    border: none;
+    color: #fff;
+    border-radius: 2px;
+    padding: 7px 10px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.form .nombre {
+    width: 50%;
+    margin-bottom: 15px;
+    padding: 7px 10px;
+    border-radius: 2px;
+    color: #fff;
+    background-color: #fff;
+    border: none;
+}
+
+.enlacemenu {
+    font-size: 18px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.enlacemenu:hover {
+    color: #841f37;
+}
+
+.row {
+    display: flex;
+    justify-content: flex-start;
+    align-items: stretch;
+    flex-wrap: nowrap;
+    padding: 10px;
+}
+
+.cell {
+    min-height: 75px;
+    flex-grow: 1;
+    flex-basis: 100%;
+    margin-left: 20px;
+}
+
+#i8jraq {
+    min-height: 70px;
+    padding: 26px 0 20px 0;
+    background-image: linear-gradient(rgb(132, 31, 55), rgb(132, 31, 55));
+    background-repeat: repeat;
+    background-position: left top;
+    background-attachment: scroll;
+    background-size: auto;
+}
+
+#ildh7x {
+    color: #ffffff;
+}
+
+#ibwfjg {
+    font-weight: 700;
+}
+
+#i0z5zz {
+    font-weight: 700;
+}
+
+#i7o9js {
+    font-weight: 700;
+}
+
+#iclwbh {
+    font-weight: 700;
+}
+
+#i11qoy {
+    height: 140px;
+}
+
+#it3tj7 {
+    color: black;
+}
+
+#icbtki {
+    padding: 10px;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+#i6s64o {
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+#ialsok {
+    padding: 10px;
+    font-size: 18px;
+}
+
+#iadnk {
+    color: black;
+}
+
+#ijrh9 {
+    padding: 10px;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+#itrfie {
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+#iwusqv {
+    padding: 10px;
+    font-size: 18px;
+}
+
+#iadp6u {
+    color: black;
+}
+
+#ivhiul {
+    padding: 10px;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+#i5cpsg {
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+#i3gwun {
+    padding: 10px;
+    font-size: 18px;
+}
+
+#iayuow {
+    margin: 20px 50px 0 30px;
+}
+
+#iza5s {
+    color: black;
+}
+
+#i2asz {
+    padding: 10px;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+#it4j7 {
+    padding: 10px;
+    font-size: 18px;
+}
+
+#i7uta {
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+#i1k2i {
+    color: black;
+}
+
+#ie6oy {
+    padding: 10px;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+#i9mw6 {
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+#ij3jz {
+    padding: 10px;
+    font-size: 18px;
+}
+
+#i9ksnl {
+    color: black;
+}
+
+#i86opw {
+    padding: 10px;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+#i7494g {
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+#i97a6s {
+    padding: 10px;
+    font-size: 18px;
+}
+
+#ipf2r9 {
+    margin: 0 100px 0 100px;
+}
+
+#i32c9o {
+    padding: 10px;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 700;
+    margin: 30px 0 0 0;
+}
+
+@media (max-width: 768px) {
+    .row {
+        flex-wrap: wrap;
+    }
+}
